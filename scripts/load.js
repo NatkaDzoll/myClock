@@ -30,4 +30,4 @@ $(function(){
 	Minsk_M.init(Minsk_V);
 	Minsk_V.init(Minsk_M, Minsk);
 	Minsk_C.init(Minsk_M, Minsk);
-}
+});
