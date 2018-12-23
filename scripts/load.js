@@ -1,4 +1,5 @@
-var NewYork_M = new Tclock();
+$(function(){
+	var NewYork_M = new Tclock();
 	var NewYork_V = new TclockViewDOM(-5);
 	var NewYork_C = new TClockController();
 	var  NewYorkBox = document.body.querySelector('#NewYork');
@@ -29,3 +30,4 @@ var NewYork_M = new Tclock();
 	Minsk_M.init(Minsk_V);
 	Minsk_V.init(Minsk_M, Minsk);
 	Minsk_C.init(Minsk_M, Minsk);
+}
