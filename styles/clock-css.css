@@ -1,112 +1,105 @@
 body{
-			margin: 0 auto;
-			text-align:center;
-			width:90%;
-		}
-
-		input {
-		margin: 3px 5px 10px;
-		}
-
-		canvas {
-			display: block;
-			width: 300px;
-			height: 300px;
-			border: 50%;
-			background-color:rgba(204, 204, 204, .5490196078431373);
-			border-radius: 120px; /* 165pxx */
-			margin: 0 auto;
-			box-shadow:0px 0px 15px #3F3F3F inset;
-		}
-
-		.time {
-			width: 330px;
-			height: 380px;
-			color: #161616;
-			background: repeating-linear-gradient(35deg, 
-				#429392FF 50px, 
-				rgb(232, 223, 216) 120px, 
-				#A5C9C0FF 200px,
-				#429392FF 500px);
-			display: inline-block;
-			text-align: center;
-			font-weight: bold;
-			font-size: 18px;
-			box-shadow: 2px 5px 10px #262626;
-			padding: 15px;
-			margin: 5px;
-		}
-		
-		.clockFace {
-		    border: solid 10px #333;
- 			border-radius: 50%;
-			position: relative;
-			background: rgba(256, 256, 256, 0.35);
-			width: 300px;
-			height: 300px;
-			margin: 0 auto;
-			z-index: 1;
-			box-shadow: 0px 0px 10px #3F3F3F inset;
-		}
-		.round { 
-			position: absolute;
-			background-color: rgba(13, 71, 88, 0.6);
-			width : 30px;
-			height: 30px;
-			border-radius:15px;
-			box-shadow: 1px 1px 3px #3F3F3F;
-			z-index: 2;
-		}
-		.num {
-			position: absolute;
-			font-size: 11px;
-			font-family: sans-serif;
-			color: #A4BBA4;
-		}
-		.hourHand {
-
-			width: 8px;
-			height: 85px;
-			border-radius: 0 0 5px 5px;
-			z-index: 3;
-			background-color: #0C2217;
-			position: absolute;
-			transform-origin: 4px 75px;
-		}
-		.minuteHand{
-			width: 6px;
-			height: 110px;
-			border-radius: 0 0 3px 3px;
-			z-index: 4;
-			background-color: rgba(140, 139, 131, 1);
-			position: absolute;
-			transform-origin: 3px 100px;
-		}
-		.secondHand{
-			width: 2px;
-			height: 135px;
-			border-radius: 1px;
-			z-index: 4;
-			background-color: red;
-			position: absolute;
-			transform-origin: 1px 125px;
-		}
-		.digClock{
-			position:absolute;
-			font-size: 23px;
-			background-color: #E0E0E0FF;
-			color: #072D1A;
-			font-family: sans-serif;
-			font-weight: bold;
-			font-size: 18px;
-			width: 100px;
-			left: 95px;
-			top: 60px;
-			margin: 5px auto;
-			padding: 5px;
-			text-shadow:0px 1px 2px #3F3F3F;
-			box-shadow:0px 0px 7px #3F3F3F inset;
-			z-index: -2;
-
-		}
-		
+	margin: 0 auto;
+	text-align:center;
+	width:90%;
+}
+input {
+	margin: 3px 5px 10px;
+}
+canvas {
+	display: block;
+	width: 300px;
+	height: 300px;
+	border: 50%;
+	background-color:rgba(204, 204, 204, .5490196078431373);
+	border-radius: 120px; /* 165pxx */
+	margin: 0 auto;
+	box-shadow:0px 0px 15px #3F3F3F inset;
+}
+.time {
+	width: 330px;
+	height: 380px;
+	color: #161616;
+	background: repeating-linear-gradient(35deg, 
+		#429392FF 50px, 
+		rgb(232, 223, 216) 120px, 
+		#A5C9C0FF 200px,
+		#429392FF 500px);
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	box-shadow: 2px 5px 10px #262626;
+	padding: 15px;
+	margin: 5px;
+}
+.clockFace {
+	border: solid 10px #333;
+	border-radius: 50%;
+	position: relative;
+	background: rgba(256, 256, 256, 0.35);
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	z-index: 1;
+	box-shadow: 0px 0px 10px #3F3F3F inset;
+}
+.round { 
+	position: absolute;
+	background-color: rgba(13, 71, 88, 0.6);
+	width : 30px;
+	height: 30px;
+	border-radius:15px;
+	box-shadow: 1px 1px 3px #3F3F3F;
+	z-index: 2;
+}
+.num {
+	position: absolute;
+	font-size: 11px;
+	font-family: sans-serif;
+	color: #A4BBA4;
+}
+.hourHand {
+	width: 8px;
+	height: 85px;
+	border-radius: 0 0 5px 5px;
+	z-index: 3;
+	background-color: #0C2217;
+	position: absolute;
+	transform-origin: 4px 75px;
+}
+.minuteHand{
+	width: 6px;
+	height: 110px;
+	border-radius: 0 0 3px 3px;
+	z-index: 4;
+	background-color: rgba(140, 139, 131, 1);
+	position: absolute;
+	transform-origin: 3px 100px;
+}
+.secondHand{
+	width: 2px;
+	height: 135px;
+	border-radius: 1px;
+	z-index: 4;
+	background-color: red;
+	position: absolute;
+	transform-origin: 1px 125px;
+}
+.digClock{
+	position:absolute;
+	font-size: 23px;
+	background-color: #E0E0E0FF;
+	color: #072D1A;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	width: 100px;
+	left: 95px;
+	top: 60px;
+	margin: 5px auto;
+	padding: 5px;
+	text-shadow:0px 1px 2px #3F3F3F;
+	box-shadow:0px 0px 7px #3F3F3F inset;
+	z-index: -2;
+}
