@@ -21,10 +21,10 @@ canvas {
 	height: 380px;
 	color: #161616;
 	background: repeating-linear-gradient(35deg, 
-		#429392FF 50px, 
+		#9AC5C4FF 50px, 
 		rgb(232, 223, 216) 120px, 
-		#A5C9C0FF 200px,
-		#429392FF 500px);
+		#D4E2DEFF 200px,
+		#9AC5C4FF 500px);
 	display: inline-block;
 	text-align: center;
 	font-weight: bold;
